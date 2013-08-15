@@ -30,21 +30,23 @@ automatically use your Hub's (or pre-defined) location for the current condition
 
 The device, by itself, is relatively unimpressive. It just displays the following data
 for each of your locations:
-    * Outside Temperature
-    * Humidity
-    * Feels Like (Temperature and Relative Humidity)
-    * Current Forecast
-    * Wind Speed
-    * Wind Direction
-    * UV Index
-    * Precipitation over last hour
+
+ * Outside Temperature
+ * Humidity
+ * Feels Like (Temperature and Relative Humidity)
+ * Current Forecast
+ * Wind Speed
+ * Wind Direction
+ * UV Index
+ * Precipitation over last hour
 
 The real magic is writing SmartApps that do something based on this data.
 
 For example, you can alert yourself when:
-    * the Wind Speed is high, so you can secure your garbage cans.
-    * the UV Index is high, so you can remind yourself to take sunscreen.
-    * the forecast is rainy, so you can take your umbrella.
-    * the precipitation is zero so you can go outside (very useful in Seattle)
-    * ...and more!
+
+ * the Wind Speed is high, so you can secure your garbage cans.
+ * the UV Index is high, so you can remind yourself to take sunscreen.
+ * the forecast is rainy, so you can take your umbrella.
+ * the precipitation is zero so you can go outside (very useful in Seattle)
+ * ...and more!
 
