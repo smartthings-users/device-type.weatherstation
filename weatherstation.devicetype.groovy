@@ -26,8 +26,14 @@ preferences {
     input("zipcode", "text", title: "ZipCode", description: "ZipCode of Forecast (leave blank to autodetect)")
 }
 
- // for the UI
 metadata {
+    definition (name: "Weather Station", author: "jnovack@gmail.com") {
+      capability "Polling"
+      capability "Relative Humidity Measurement"
+      capability "Water Sensor"
+      capability "Temperature Measurement"
+    }
+
     simulator {
         // TODO: define status and reply messages here
     }
@@ -80,10 +86,10 @@ metadata {
             state "wind_speed", label: '${currentValue}', unit: "mph", backgroundColors: [
                 // Values and colors based on the Beaufort Scale
                 // http://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale
-                [value: 0, color: "#ffffff"],
-                [value: 1, color: "#ccffff"],
-                [value: 4, color: "#99ffcc"],
-                [value: 8, color: "#99ff99"],
+                [value: 0,  color: "#ffffff"],
+                [value: 1,  color: "#ccffff"],
+                [value: 4,  color: "#99ffcc"],
+                [value: 8,  color: "#99ff99"],
                 [value: 13, color: "#99ff66"],
                 [value: 18, color: "#99ff00"],
                 [value: 25, color: "#ccff00"],
